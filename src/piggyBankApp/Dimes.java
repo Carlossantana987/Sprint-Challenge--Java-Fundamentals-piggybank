@@ -4,20 +4,24 @@ public class Dimes extends TheMoney
 {
     private int dimes;
     
-    public Dimes(int dimes){
+    public Dimes(int dimes)
+    {
         this.dimes = dimes;
     }
 
-    public Dimes(){
+    public Dimes()
+    {
         this.dimes = this.dimes + 1;
     }
 
 
-    public double getValue(){
+    public double getValue()
+    {
         return dimes * 0.10;
     }
 
-    public String getName(){
+    public String getName()
+    {
         String plural = dimes > 1 ? "s":"";
         return this.dimes + " Dime" + plural;
     }

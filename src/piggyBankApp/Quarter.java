@@ -5,11 +5,13 @@ public class Quarter extends TheMoney
     
     private int quarter;
     
-    public Quarter(int quarter){
+    public Quarter(int quarter)
+    {
         this.quarter = quarter;
     }
 
-    public Quarter(){
+    public Quarter()
+    {
         this.quarter = this.quarter + 1;
     }
 	
@@ -17,7 +19,8 @@ public class Quarter extends TheMoney
         return quarter * 0.25;
     }
 	
-    public String getName(){
+    public String getName()
+    {
         String plural = quarter > 1 ? "s":"";
         return this.quarter + " Quarter" + plural;
     }
